@@ -260,7 +260,7 @@ function setEditorLibrary() {
         characters: {
             Goomba: {},
             Koopa: {
-                height: 1200,
+                height: 12,
                 arguments: {
                     smart: Boolean,
                     movement: ["moveSimple", "moveJumping", "moveFloating"]
@@ -311,10 +311,10 @@ function setEditorLibrary() {
         solids: {
             Floor: {
                 arguments: {
-                    width: 8
+                    width: 16
                 },
                 mydefaults: {
-                    width: 8
+                    width: 16
                 },
                 prefunc_custom: function(e, t, n, x) {
                     var r = "Floor, " + e.xloc + ", " + e.yloc;
