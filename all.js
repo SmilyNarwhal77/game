@@ -202,7 +202,7 @@ function findScore(e) {
     -1)
 }
 function gainLife(e, t) {
-    data.lives.amount += "number" == typeof e ? e : 1,
+    data.lives.amount += "number" == typeof e ? e : 2,
     t || AudioPlayer.play("Gain Life"),
     updateDataElement(data.lives)
 }
