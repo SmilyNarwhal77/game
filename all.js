@@ -260,7 +260,7 @@ function setEditorLibrary() {
         characters: {
             Goomba: {},
             Koopa: {
-                height: 12,
+                height: 1200,
                 arguments: {
                     smart: Boolean,
                     movement: ["moveSimple", "moveJumping", "moveFloating"]
