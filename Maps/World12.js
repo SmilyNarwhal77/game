@@ -22,12 +22,12 @@ map.areas = [
     fillPreThing(Brick, 0, 8, 1, 11, 8, 8);
     pushPreFloor(0, 0, 80);
     makeCeiling(48, 83);
-    pushPreThing(Block, 80, jumplev1, Mushroom);
+    pushPreThing(Block, 80, jumplev1, Star);
     fillPreThing(Block, 88, jumplev1, 4, 1, 8, 8);
     
     pushPreThing(Goomba, 128, 8);
     pushPreThing(Stone, 136, 8);
-    pushPreThing(Goomba, 136, 16);
+    pushPreThing(Bowser, 136, 16);
     pushPreThing(Stone, 152, 16, 1, 2);
     pushPreThing(Stone, 168, 24, 1, 3);
     pushPreThing(Stone, 184, 32, 1, 4);
