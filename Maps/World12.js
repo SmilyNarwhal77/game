@@ -25,15 +25,15 @@ map.areas = [
     pushPreThing(Block, 80, jumplev1, Mushroom);
     fillPreThing(Block, 88, jumplev1, 4, 1, 8, 8);
     
-    pushPreThing(Goomba, 128, 8);
+    pushPreThing(Bowser, 128, 8);
     pushPreThing(Stone, 136, 8);
-    pushPreThing(Goomba, 136, 16);
+    pushPreThing(Bowser, 136, 16);
     pushPreThing(Stone, 152, 16, 1, 2);
     pushPreThing(Stone, 168, 24, 1, 3);
     pushPreThing(Stone, 184, 32, 1, 4);
     pushPreThing(Stone, 200, 32, 1, 4);
     pushPreThing(Stone, 216, 24, 1, 3);
-    pushPreThing(Goomba, 232, 8);
+    pushPreThing(Bowser, 232, 8);
     pushPreThing(Brick, 232, 40, Coin);
     pushPreThing(Stone, 248, 24, 1, 3);
     pushPreThing(Stone, 264, 16, 1, 2);
@@ -61,8 +61,8 @@ map.areas = [
     fillPreThing(Coin, 465, 39, 4, 1, 8, 8);
     pushPreThing(Koopa, 472, 12);
     fillPreThing(Brick, 496, 32, 2, 7, 8, 8);
-    pushPreThing(Goomba, 494, 8);
-    pushPreThing(Goomba, 510, 8);
+    pushPreThing(Bowser, 494, 8);
+    pushPreThing(Bowser, 510, 8);
     
     fillPreThing(Brick, 528, 72, 4, 2, 8, 8);
     fillPreThing(Brick, 536, 32, 1, 5, 8, 8);
@@ -74,21 +74,21 @@ map.areas = [
     pushPreThing(Brick, 576, 40);
     fillPreThing(Brick, 576, 48, 2, 3, 8, 8);
     pushPreThing(Brick, 584, 40, Coin);
-    pushPreThing(Goomba, 584, 72);
+    pushPreThing(Bowser, 584, 72);
     
     fillPreThing(Brick, 608, 32, 4, 1, 8);
     fillPreThing(Brick, 608, 72, 4, 2, 8);
-    fillPreThing(Goomba, 608, 40, 2, 1, 12);
+    fillPreThing(Bowser, 608, 40, 2, 1, 12);
     
     pushPreFloor(664, 0, 34);
     fillPreThing(Brick, 672, 40, 6, 2, 8, 8);
     fillPreThing(Coin, 674, 64, 6, 1, 8, 8);
     pushPreThing(Brick, 712, 88, [Mushroom, 1]);
     makeCeiling(720, 45);
-    fillPreThing(Goomba, 768, 8, 3, 1, 12, 8);
+    fillPreThing(Bowser, 768, 8, 3, 1, 12, 8);
     pushPrePipe(800, 0, 24, true, 2);
     pushPrePipe(848, 0, 32, true);
-    pushPreThing(Goomba, 872, 8);
+    pushPreThing(Bowser, 872, 8);
     pushPrePipe(896, 0, 16, true, false, 3);
     
     pushPreFloor(952, 0, 2);
@@ -98,9 +98,9 @@ map.areas = [
     pushPreThing(Stone, 1040, 8);
     pushPreThing(Stone, 1048, 16, 1, 2);
     pushPreThing(Stone, 1056, 24, 1, 3);
-    pushPreThing(Goomba, 1056, 32);
+    pushPreThing(Bowser, 1056, 32);
     pushPreThing(Stone, 1064, 32, 1, 4);
-    pushPreThing(Goomba, 1064, 48);
+    pushPreThing(Bowser, 1064, 48);
     pushPreThing(Stone, 1072, 32, 1, 4);
     pushPrePlatformGenerator(1096, 6, 1);
     // pushPreThing(PlatformGenerator, 1096, ceilmax, 6, 1);
