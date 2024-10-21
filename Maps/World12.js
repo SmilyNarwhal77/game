@@ -27,7 +27,7 @@ map.areas = [
     
     pushPreThing(Goomba, 128, 8);
     pushPreThing(Stone, 136, 8);
-    pushPreThing(Lakitu, 136, 16);
+    pushPreThing(Goomba, 136, 16);
     pushPreThing(Stone, 152, 16, 1, 2);
     pushPreThing(Stone, 168, 24, 1, 3);
     pushPreThing(Stone, 184, 32, 1, 4);
