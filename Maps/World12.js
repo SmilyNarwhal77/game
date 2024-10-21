@@ -1,4 +1,4 @@
-map.time = 30000;
+map.time = 3000;
 map.locs = [
   new Location(0, true),
   new Location(0, exitPipeVert),
@@ -23,7 +23,7 @@ map.areas = [
     pushPreFloor(464, 0, 111);
     pushPreThing(Koopa, 488, 12);
     pushPreThing(Coin, 513, 39);
-    fillPreThing(Goomba, 552, 8, 3, 1, 12);
+    fillPreThing(Goomba, 552, 8, 15, 1, 12);
     pushPrePipe(608, 0, 32, true);
     pushPreThing(Block, 640, 40, [Mushroom, 1], true);
     pushPreThing(Beetle, 648, 8.5);
