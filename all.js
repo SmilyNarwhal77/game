@@ -3744,7 +3744,7 @@ function World11(e) {
         pushPreThing(Stone, 1496, 56, 1, 7),
         pushPreThing(Stone, 1504, 64, 2, 8),
         endCastleOutside(1580, 0, 1)
-    }, new Area("Underworld",(function() {
+    })), new Area("Underworld",(function() {
         setLocationGeneration(2),
         makeCeiling(32, 7),
         pushPreFloor(0, 0, 17),
@@ -3763,7 +3763,7 @@ function World11(e) {
     pushPreThing(Platform, 120, 32, 8, collideTransport);
     fillPreThing(Coin, 120, 64, 16, 1, 8);
     fillPreThing(Coin, 256, 80, 3, 1, 8);
-    fillPreThing(Koopa, 288, 72, 16, 1, 8);
+    fillPreThing(Coin, 288, 72, 16, 1, 8);
     fillPreThing(Coin, 424, 80, 3, 1, 8);
     
     setExitLoc(1);
