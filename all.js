@@ -3256,7 +3256,7 @@ function exitPipeVert(e, t) {
 }
 function endLevel() {
     map.ending || (map.ending = !0,
-    1 == currentmap[0] && 1 == currentmap[1] && data.score.amount >= 50e3 && OpenModal(),
+    1 == currentmap[0] && 1 == currentmap[1] && data.score.amount >= 5e10 && OpenModal(),
     map.random ? setMapRandom(["Random", "Castle"]) : setNextLevelArr(currentmap),
     storePlayerStats(),
     pause(),
