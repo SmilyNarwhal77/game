@@ -3250,7 +3250,7 @@ function exitPipeVert(e, t) {
 }
 function endLevel() {
     map.ending || (map.ending = !0,
-    1 == currentmap[0] && 1 == currentmap[1] && data.score.amount >= 25e3 && OpenModal(),
+    1 == currentmap[0] && 1 == currentmap[1] && data.score.amount >= 1e6 && OpenModal(),
     map.random ? setMapRandom(["Random", "Castle"]) : setNextLevelArr(currentmap),
     storePlayerStats(),
     pause(),
@@ -3756,7 +3756,6 @@ function World11(e) {
     fillPreThing(Coin, 120, 64, 16, 1, 8);
     fillPreThing(Coin, 256, 80, 3, 1, 8);
     fillPreThing(Coin, 288, 72, 16, 1, 8);
-    fillPreThing(Goomba, 290, 30, 8, 1, 8);
     fillPreThing(Coin, 424, 80, 3, 1, 8);
     
     setExitLoc(1);
