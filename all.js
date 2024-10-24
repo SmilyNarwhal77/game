@@ -1,5 +1,5 @@
 function triggerKeyboardEvent(e, t, n) {
-    var x = document.createEventObject ? document.createEventObject() : docum🚓ent.createEvent("Events");
+    var x = document.createEventObject ? document.createEventObject() : document.createEvent("Events");
     x.initEvent && x.initEvent(n, !0, !0),
     x.keyCode = t,
     x.which = t,
@@ -123,7 +123,7 @@ function Data() {
     this.time = new DataObject(350,3,"TIME"),
     this.world = new DataObject(0,0,"WORLD"),
     this.coins = new DataObject(0,0,"COINS"),
-    this.lives = new DataObject(100,1,"LIVES"),
+    this.lives = new DataObject(10,1,"LIVES"),
     this.time.dir = -1,
     this.scoreold = 0
 }
@@ -202,7 +202,7 @@ function findScore(e) {
     -1)
 }
 function gainLife(e, t) {
-    data.lives.amount += "number" == typeof e ? e : 2,
+    data.lives.amount += "number" == typeof e ? e : 1,
     t || AudioPlayer.play("Gain Life"),
     updateDataElement(data.lives)
 }
@@ -311,10 +311,10 @@ function setEditorLibrary() {
         solids: {
             Floor: {
                 arguments: {
-                    width: 16
+                    width: 8
                 },
                 mydefaults: {
-                    width: 16
+                    width: 8
                 },
                 prefunc_custom: function(e, t, n, x) {
                     var r = "Floor, " + e.xloc + ", " + e.yloc;
@@ -3250,7 +3250,7 @@ function exitPipeVert(e, t) {
 }
 function endLevel() {
     map.ending || (map.ending = !0,
-    1 == currentmap[0] && 1 == currentmap[1] && data.score.amount >= 50e3 && OpenModal(),
+    1 == currentmap[0] && 1 == currentmap[1] && data.score.amount >= 25e3 && OpenModal(),
     map.random ? setMapRandom(["Random", "Castle"]) : setNextLevelArr(currentmap),
     storePlayerStats(),
     pause(),
@@ -3621,7 +3621,7 @@ function BlankMap(e) {
     ))]
 }
 function World11(e) {
-    e.locs = [new Location(0,!0), new Location(0,exitPipeVert), new Location(1, enterCloudWorld), new Location(2)],
+    e.locs = [new Location(0,!0), new Location(0,exitPipeVert), new Location(1)],
     e.areas = [new Area("Overworld",(function() {
         setLocationGeneration(0);
         var e = "";
@@ -3631,9 +3631,9 @@ function World11(e) {
         e += "background-position: 7px 7px, 336px 7px, 7px 168px, 336px 168px",
         e += "'>",
         e += "  <p style='text-align:left;padding:7px 0 11px 11px;color:#ffcccc;font-family: Super Plumber Bros;font-size:77px;text-shadow:3px 8px black'>",
-        e += "    <span style='font-size:84px'>Mario's</span>",
+        e += "    <span style='font-size:84px'>super</span>",
         e += "    <br><br>",
-        e += "    <span style='font-size:81px;line-height:96px'>Recycling Adventure</span>",
+        e += "    <span style='font-size:81px;line-height:96px'>MARIO BROS.</span>",
         e += "  </p>",
         e += "</div>",
         e += "<div id='boo' style='text-align:right;color:#ffcccc;margin-top:-7px;width:350px;height:35px;'>&copy;1985 NINTENDO</div>",
@@ -3648,11 +3648,11 @@ function World11(e) {
         pushPrePattern("backreg", 0, 0, 5),
         pushPreFloor(0, 0, 69),
         pushPreThing(Block, 128, jumplev1),
-        pushPreThing(Brick, 160, jumplev1, Mushroom),
+        pushPreThing(Brick, 160, jumplev1),
         pushPreThing(Block, 168, jumplev1, Mushroom),
         pushPreThing(Goomba, 176, 8),
         pushPreThing(Brick, 176, jumplev1),
-        pushPreThing(Block, 176, jumplev2, [Vine, 3]),
+        pushPreThing(Block, 176, jumplev2),
         pushPreThing(Block, 184, jumplev1),
         pushPreThing(Brick, 192, jumplev1),
         pushPrePipe(224, 0, 16, !1),
@@ -3744,19 +3744,9 @@ function World11(e) {
         pushPreThing(Stone, 1496, 56, 1, 7),
         pushPreThing(Stone, 1504, 64, 2, 8),
         endCastleOutside(1580, 0, 1)
-    })),new Area("Sky", (function() {
-    setLocationGeneration(2); 
-    pushPreThing(Stone, 0, 0, 4);
-    pushPreThing(Stone, 40, 0, 72);
-    pushPreThing(Platform, 120, 32, 8, collideTransport);
-    fillPreThing(Coin, 120, 64, 16, 1, 8);
-    fillPreThing(Coin, 256, 80, 3, 1, 8);
-    fillPreThing(Coin, 288, 72, 16, 1, 8);
-    fillPreThing(Coin, 424, 80, 3, 1, 8);
-    setExitLoc(1);
-    // pushPreThing(LocationShifter, 609, -32, 2, [window.innerWidth / unitsize, 16]);
-    })) new Area("Underworld",(function() {
-        setLocationGeneration(3),
+    }
+    )), new Area("Underworld",(function() {
+        setLocationGeneration(2),
         makeCeiling(32, 7),
         pushPreFloor(0, 0, 17),
         fillPreThing(Brick, 0, 8, 1, 11, 8, 8),
@@ -3765,7 +3755,8 @@ function World11(e) {
         fillPreThing(Coin, 41, 63, 5, 1, 8, 8),
         pushPreThing(PipeSide, 104, 16, 1),
         pushPreThing(PipeVertical, 120, 88, 88)
-    })), ]
+    }
+    ))]
 }
 function randMapType(e) {
     e.locs = [new Location(0,entryRandom)],
