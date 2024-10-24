@@ -3650,7 +3650,7 @@ function World11(e) {
         pushPreThing(Block, 128, jumplev1),
         pushPreThing(Brick, 160, jumplev1, Mushroom),
         pushPreThing(Block, 168, jumplev1, Mushroom),
-        pushPreThing(Bowser, 176, 8),
+        pushPreThing(Goomba, 176, 8),
         pushPreThing(Brick, 176, jumplev1),
         pushPreThing(Block, 176, jumplev2, [Vine, 3]),
         pushPreThing(Block, 184, jumplev1),
@@ -3658,10 +3658,10 @@ function World11(e) {
         pushPrePipe(224, 0, 16, !1),
         pushPrePipe(304, 0, 24),
         pushPrePipe(368, 0, 32),
-        pushPreThing(Bowser, 340, 8),
+        pushPreThing(Goomba, 340, 8),
         pushPrePipe(368, 0, 32),
-        pushPreThing(Bowser, 412, 8),
-        pushPreThing(Bowser, 422, 8),
+        pushPreThing(Goomba, 412, 8),
+        pushPreThing(Goomba, 422, 8),
         pushPrePipe(456, 0, 32, !1, 2),
         pushPreThing(Block, 512, 40, [Mushroom, 1], !0),
         pushPreFloor(568, 0, 15),
@@ -3669,10 +3669,10 @@ function World11(e) {
         pushPreThing(Block, 626, jumplev1, Mushroom),
         pushPreThing(Brick, 634, jumplev1),
         pushPreThing(Brick, 640, jumplev2),
-        pushPreThing(Bowser, 640, jumplev2 + 8),
+        pushPreThing(Goomba, 640, jumplev2 + 8),
         pushPreThing(Brick, 648, jumplev2),
         pushPreThing(Brick, 656, jumplev2),
-        pushPreThing(Bowser, 656, jumplev2 + 8),
+        pushPreThing(Goomba, 656, jumplev2 + 8),
         pushPreThing(Brick, 664, jumplev2),
         pushPreThing(Brick, 672, jumplev2),
         pushPreThing(Brick, 680, jumplev2),
@@ -3684,8 +3684,8 @@ function World11(e) {
         pushPreThing(Brick, 744, jumplev2),
         pushPreThing(Brick, 752, jumplev1, Coin),
         pushPreThing(Block, 752, jumplev2),
-        pushPreThing(Bowser, 776, 8),
-        pushPreThing(Bowser, 788, 8),
+        pushPreThing(Goomba, 776, 8),
+        pushPreThing(Goomba, 788, 8),
         pushPreThing(Brick, 800, jumplev1),
         pushPreThing(Brick, 808, jumplev1, Star),
         pushPreThing(Block, 848, jumplev1),
@@ -3693,16 +3693,16 @@ function World11(e) {
         pushPreThing(Block, 872, jumplev1),
         pushPreThing(Block, 872, jumplev2, Mushroom),
         pushPreThing(Block, 896, jumplev1),
-        pushPreThing(Bowser, 912, 8),
-        pushPreThing(Bowser, 924, 8),
+        pushPreThing(Goomba, 912, 8),
+        pushPreThing(Goomba, 924, 8),
         pushPreThing(Brick, 944, jumplev1),
         pushPreThing(Brick, 968, jumplev2),
         pushPreThing(Brick, 976, jumplev2),
         pushPreThing(Brick, 984, jumplev2),
-        pushPreThing(Bowser, 992, 8),
-        pushPreThing(Bowser, 1004, 8),
-        pushPreThing(Bowser, 1024, 8),
-        pushPreThing(Bowser, 1036, 8),
+        pushPreThing(Goomba, 992, 8),
+        pushPreThing(Goomba, 1004, 8),
+        pushPreThing(Goomba, 1024, 8),
+        pushPreThing(Goomba, 1036, 8),
         pushPreThing(Brick, 1024, jumplev2),
         pushPreThing(Brick, 1032, jumplev1),
         pushPreThing(Block, 1032, jumplev2),
@@ -3732,8 +3732,8 @@ function World11(e) {
         pushPreThing(Brick, 1352, jumplev1),
         pushPreThing(Block, 1360, jumplev1),
         pushPreThing(Brick, 1368, jumplev1),
-        pushPreThing(Bowser, 1392, 8),
-        pushPreThing(Bowser, 1404, 8),
+        pushPreThing(Goomba, 1392, 8),
+        pushPreThing(Goomba, 1404, 8),
         pushPrePipe(1432, 0, 16),
         pushPreThing(Stone, 1448, 8),
         pushPreThing(Stone, 1456, 16, 1, 2),
@@ -3744,23 +3744,8 @@ function World11(e) {
         pushPreThing(Stone, 1496, 56, 1, 7),
         pushPreThing(Stone, 1504, 64, 2, 8),
         endCastleOutside(1580, 0, 1)
-    }
-                
-    )), new Area("Sky", function() {
-    setLocationGeneration(2);
-    
-    pushPreThing(Stone, 0, 0, 4);
-    pushPreThing(Stone, 40, 0, 72);
-    pushPreThing(Platform, 120, 32, 8, collideTransport);
-    fillPreThing(Coin, 120, 64, 16, 1, 8);
-    fillPreThing(Coin, 256, 80, 3, 1, 8);
-    fillPreThing(Coin, 288, 72, 16, 1, 8);
-    fillPreThing(Coin, 424, 80, 3, 1, 8);
-    
-    setExitLoc(1);
-    // pushPreThing(LocationShifter, 609, -32, 2, [window.innerWidth / unitsize, 16]);
-    }), new Area("Underworld",(function() {
-        setLocationGeneration(3),
+    }, new Area("Underworld",(function() {
+        setLocationGeneration(2),
         makeCeiling(32, 7),
         pushPreFloor(0, 0, 17),
         fillPreThing(Brick, 0, 8, 1, 11, 8, 8),
@@ -3770,7 +3755,22 @@ function World11(e) {
         pushPreThing(PipeSide, 104, 16, 1),
         pushPreThing(PipeVertical, 120, 88, 88)
     }
-    ))]
+    ))
+                
+    )), new Area("Sky", function() {
+    setLocationGeneration(3);
+    
+    pushPreThing(Stone, 0, 0, 4);
+    pushPreThing(Stone, 40, 0, 72);
+    pushPreThing(Platform, 120, 32, 8, collideTransport);
+    fillPreThing(Goomba, 120, 64, 16, 1, 8);
+    fillPreThing(Koopa, 256, 80, 3, 1, 8);
+    fillPreThing(Beetle, 288, 72, 16, 1, 8);
+    fillPreThing(Bowser, 424, 80, 3, 1, 8);
+    
+    setExitLoc(1);
+    // pushPreThing(LocationShifter, 609, -32, 2, [window.innerWidth / unitsize, 16]);
+    })]
 }
 function randMapType(e) {
     e.locs = [new Location(0,entryRandom)],
@@ -3983,7 +3983,7 @@ function resetSounds() {
     window.sounds = {},
     window.theme = !1,
     window.muted = localStorage && "true" == localStorage.muted,
-    window.AudioPlayer = new AudioPlayr({
+    window.AudioPlayer = new AudioPlayer({
         directory: "Sounds",
         getVolumeLocal: function() {
             return .49
