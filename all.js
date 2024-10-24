@@ -3744,9 +3744,8 @@ function World11(e) {
         pushPreThing(Stone, 1496, 56, 1, 7),
         pushPreThing(Stone, 1504, 64, 2, 8),
         endCastleOutside(1580, 0, 1)
-    })),new Area("Sky", function() {
-    setLocationGeneration(3);
-    
+    })),new Area("Sky", (function() {
+    setLocationGeneration(2); 
     pushPreThing(Stone, 0, 0, 4);
     pushPreThing(Stone, 40, 0, 72);
     pushPreThing(Platform, 120, 32, 8, collideTransport);
@@ -3754,11 +3753,10 @@ function World11(e) {
     fillPreThing(Coin, 256, 80, 3, 1, 8);
     fillPreThing(Coin, 288, 72, 16, 1, 8);
     fillPreThing(Coin, 424, 80, 3, 1, 8);
-    
     setExitLoc(1);
     // pushPreThing(LocationShifter, 609, -32, 2, [window.innerWidth / unitsize, 16]);
-    }) new Area("Underworld",(function() {
-        setLocationGeneration(2),
+    })) new Area("Underworld",(function() {
+        setLocationGeneration(3),
         makeCeiling(32, 7),
         pushPreFloor(0, 0, 17),
         fillPreThing(Brick, 0, 8, 1, 11, 8, 8),
@@ -3767,8 +3765,7 @@ function World11(e) {
         fillPreThing(Coin, 41, 63, 5, 1, 8, 8),
         pushPreThing(PipeSide, 104, 16, 1),
         pushPreThing(PipeVertical, 120, 88, 88)
-    }           
-    )), ]
+    })), ]
 }
 function randMapType(e) {
     e.locs = [new Location(0,entryRandom)],
