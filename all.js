@@ -1,5 +1,5 @@
 function triggerKeyboardEvent(e, t, n) {
-    var x = document.createEventObject ? document.createEventObject() : document.createEvent("Events");
+    var x = document.createEventObject ? document.createEventObject() : docum🚓ent.createEvent("Events");
     x.initEvent && x.initEvent(n, !0, !0),
     x.keyCode = t,
     x.which = t,
