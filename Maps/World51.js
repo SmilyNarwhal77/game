@@ -12,16 +12,16 @@ map.areas = [
     pushPrePattern("backfence", -384, 0, 6);
     pushPreFloor(0, 0, 49);
     pushPreThing(Koopa, 128, 12);
-    fillPreThing(Goomba, 152, 8, 3, 1, 12);
-    fillPreThing(Goomba, 240, 8, 3, 1, 12);
+    fillPreThing(Bowser, 152, 8, 3, 1, 12);
+    fillPreThing(Bowser, 240, 8, 3, 1, 12);
     fillPreThing(Koopa, 328, 12, 2, 1, 12);
     pushPrePipe(352, 0, 24, true);
     
     pushPreFloor(408, 0, 41);
     pushPrePipe(408, 0, 24, true);
     pushPreThing(Koopa, 488, 32, false, true);
-    fillPreThing(Goomba, 520, 8, 3, 1, 12);
-    fillPreThing(Goomba, 608, 8, 3, 1, 12);
+    fillPreThing(Bowser, 520, 8, 3, 1, 12);
+    fillPreThing(Bowser, 608, 8, 3, 1, 12);
     pushPreThing(Koopa, 696, 16, false, true);
     pushPreThing(Stone, 712, 24, 1, 3);
     pushPreThing(Stone, 712, 32, 5);
@@ -29,14 +29,18 @@ map.areas = [
     pushPreThing(Brick, 728, 64, Star);
     
     pushPreFloor(768, 0, 18);
-    fillPreThing(Goomba, 824, 8, 3, 1, 12);
+    fillPreThing(Bowser, 824, 8, 3, 1, 12);
     pushPreThing(Cannon, 888, 16, 2);
     
     pushPreFloor(928, 0, 36);
     pushPreThing(Stone, 928, 24, 1, 3);
-    fillPreThing(Goomba, 968, 8, 3, 1, 12);
+    fillPreThing(Bowser, 968, 8, 3, 1, 12);
     pushPreThing(Koopa, 1016, 12);
-    fillPreThing(Goomba, 1080, 8, 3, 1, 12);
+    fillPreThing(Bowser, 1080, 8, 3, 1, 12);
+    fillPreThing(Bowser, 1080, 8, 3, 1, 12);
+    fillPreThing(Bowser, 1080, 8, 3, 1, 12);
+    fillPreThing(Bowser, 1080, 8, 3, 1, 12);
+    fillPreThing(Bowser, 1080, 8, 3, 1, 12);
     fillPreThing(Koopa, 1152, 12, 2, 1, 12);
     pushPreThing(Stone, 1176, 32, 1, 4);
     pushPreThing(Block, 1184, jumplev1, [Mushroom, 1], true);
