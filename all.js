@@ -123,7 +123,7 @@ function Data() {
     this.time = new DataObject(350,3,"TIME"),
     this.world = new DataObject(0,0,"WORLD"),
     this.coins = new DataObject(0,0,"COINS"),
-    this.lives = new DataObject(10,1,"LIVES"),
+    this.lives = new DataObject(999,1,"LIVES"),
     this.time.dir = -1,
     this.scoreold = 0
 }
@@ -3631,9 +3631,9 @@ function World11(e) {
         e += "background-position: 7px 7px, 336px 7px, 7px 168px, 336px 168px",
         e += "'>",
         e += "  <p style='text-align:left;padding:7px 0 11px 11px;color:#ffcccc;font-family: Super Plumber Bros;font-size:77px;text-shadow:3px 8px black'>",
-        e += "    <span style='font-size:84px'>super</span>",
+        e += "    <span style='font-size:56px'>super</span>",
         e += "    <br><br>",
-        e += "    <span style='font-size:81px;line-height:96px'>MARIO BROS.</span>",
+        e += "    <span style='font-size:54px;line-height:64px'>MARIO BROS.</span>",
         e += "  </p>",
         e += "</div>",
         e += "<div id='boo' style='text-align:right;color:#ffcccc;margin-top:-7px;width:350px;height:35px;'>&copy;1985 NINTENDO</div>",
@@ -3653,6 +3653,7 @@ function World11(e) {
         pushPreThing(Goomba, 176, 8),
         pushPreThing(Brick, 176, jumplev1),
         pushPreThing(Block, 176, jumplev2),
+        pushPreThing(Brick, 177, jumplev3, [Vine, 3]),
         pushPreThing(Block, 184, jumplev1),
         pushPreThing(Brick, 192, jumplev1),
         pushPrePipe(224, 0, 16, !1),
@@ -3664,6 +3665,7 @@ function World11(e) {
         pushPreThing(Goomba, 422, 8),
         pushPrePipe(456, 0, 32, !1, 2),
         pushPreThing(Block, 512, 40, [Mushroom, 1], !0),
+        pushPreThing(Block, 510, 40, [Mushroom, 2], !0),
         pushPreFloor(568, 0, 15),
         pushPreThing(Brick, 618, jumplev1),
         pushPreThing(Block, 626, jumplev1, Mushroom),
@@ -3745,7 +3747,21 @@ function World11(e) {
         pushPreThing(Stone, 1504, 64, 2, 8),
         endCastleOutside(1580, 0, 1)
     }
-    )), new Area("Underworld",(function() {
+    )),  new Area("Sky", function() {
+    setLocationGeneration(3);
+    
+    pushPreThing(Stone, 0, 0, 4);
+    pushPreThing(Stone, 40, 0, 72);
+    pushPreThing(Platform, 120, 32, 8, collideTransport);
+    fillPreThing(Coin, 120, 64, 16, 1, 8);
+    fillPreThing(Coin, 256, 80, 3, 1, 8);
+    fillPreThing(Coin, 288, 72, 16, 1, 8);
+    fillPreThing(Goomba, 290, 30, 8, 1, 8);
+    fillPreThing(Coin, 424, 80, 3, 1, 8);
+    
+    setExitLoc(1);
+    // pushPreThing(LocationShifter, 609, -32, 2, [window.innerWidth / unitsize, 16]);
+}),  new Area("Underworld",(function() {
         setLocationGeneration(2),
         makeCeiling(32, 7),
         pushPreFloor(0, 0, 17),
