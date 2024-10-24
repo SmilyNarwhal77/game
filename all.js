@@ -3660,10 +3660,10 @@ function World11(e) {
         pushPrePipe(304, 0, 24),
         pushPrePipe(368, 0, 32),
         pushPreThing(Goomba, 340, 8),
-        pushPrePipe(368, 0, 32),
+        pushPrePipe(368, 0, 32, !2, 4),
         pushPreThing(Goomba, 412, 8),
         pushPreThing(Goomba, 422, 8),
-        pushPrePipe(456, 0, 32, !1, 2),
+        pushPrePipe(456, 0, 32, !1, 3),
         pushPreThing(Block, 512, 40, [Mushroom, 1], !0),
         pushPreThing(Block, 518, 40, [Mushroom, 1], !0),
         pushPreFloor(568, 0, 15),
@@ -3736,7 +3736,7 @@ function World11(e) {
         pushPreThing(Brick, 1368, jumplev1),
         pushPreThing(Goomba, 1392, 8),
         pushPreThing(Goomba, 1404, 8),
-        pushPrePipe(1432, 0, 16),
+        pushPrePipe(1432, 0, 16, !2, !2, 2),
         pushPreThing(Stone, 1448, 8),
         pushPreThing(Stone, 1456, 16, 1, 2),
         pushPreThing(Stone, 1464, 24, 1, 3),
@@ -3748,7 +3748,7 @@ function World11(e) {
         endCastleOutside(1580, 0, 1)
     }
     )),  new Area("Sky", function() {
-    setLocationGeneration(3);
+    setLocationGeneration(2);
     
     pushPreThing(Stone, 0, 0, 4);
     pushPreThing(Stone, 40, 0, 72);
@@ -3761,7 +3761,7 @@ function World11(e) {
     setExitLoc(1);
     // pushPreThing(LocationShifter, 609, -32, 2, [window.innerWidth / unitsize, 16]);
 }),  new Area("Underworld",(function() {
-        setLocationGeneration(2),
+        setLocationGeneration(3),
         makeCeiling(32, 7),
         pushPreFloor(0, 0, 17),
         fillPreThing(Brick, 0, 8, 1, 11, 8, 8),
@@ -3769,6 +3769,16 @@ function World11(e) {
         fillPreThing(Coin, 33, 31, 7, 2, 8, 16),
         fillPreThing(Coin, 41, 63, 5, 1, 8, 8),
         pushPreThing(PipeSide, 104, 16, 1),
+        pushPreThing(PipeVertical, 120, 88, 88)
+    }),  new Area("Underworld",(function() {
+        setLocationGeneration(4),
+        makeCeiling(32, 7),
+        pushPreFloor(0, 0, 17),
+        fillPreThing(Brick, 0, 8, 1, 11, 8, 8),
+        fillPreThing(Brick, 32, 8, 7, 3, 8, 8),
+        fillPreThing(Coin, 33, 31, 7, 2, 8, 16),
+        fillPreThing(Coin, 41, 63, 5, 1, 8, 8),
+        pushPreThing(PipeSide, 104, 16, 2),
         pushPreThing(PipeVertical, 120, 88, 88)
     }
     ))]
