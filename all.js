@@ -6941,7 +6941,7 @@ function scriptKeys(e) {
 }
 function lulz(e, t) {
     player.star = !0,
-    e = e || [Goomba],
+    e = e || [Bowser],
     t = t || 7,
     TimeHandler.addEventInterval((function() {
         if (!(characters.length > 210)) {
