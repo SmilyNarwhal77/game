@@ -161,6 +161,12 @@ function toggleLuigi() {
     window.player.title = window.luigi ? "Luigi" : "Mario",
     setThingSprite(window.player)
 }
+function toggleBowser() {
+    window.bowser = !window.bowser,
+    localStorage.bowser = window.bowser,
+    window.player.title = window.bowser ? "Bowser" : "Mario",
+    setThingSprite(window.player)
+}
 function startDataTime() {
     TimeHandler.addEventInterval(updateDataTime, 25, 1 / 0, data.time)
 }
