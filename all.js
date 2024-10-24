@@ -6865,6 +6865,9 @@ function Controls(e, t) {
         },
         l: function(e) {
             toggleLuigi()
+        },
+        m: function(e) {
+            toggleBowser()
         }
     }, o = this.keyup = {
         left: function(e) {
