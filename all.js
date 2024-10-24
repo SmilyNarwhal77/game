@@ -3621,7 +3621,7 @@ function BlankMap(e) {
     ))]
 }
 function World11(e) {
-    e.locs = [new Location(0,!0), new Location(0,exitPipeVert), new Location(1)],
+    e.locs = [new Location(0,!0), new Location(0,exitPipeVert), new Location(1, enterCloudWorld), new Location(2)],
     e.areas = [new Area("Overworld",(function() {
         setLocationGeneration(0);
         var e = "";
@@ -3652,7 +3652,7 @@ function World11(e) {
         pushPreThing(Block, 168, jumplev1, Mushroom),
         pushPreThing(Bowser, 176, 8),
         pushPreThing(Brick, 176, jumplev1),
-        pushPreThing(Block, 176, jumplev2),
+        pushPreThing(Block, 176, jumplev2, [Vine, 3]),
         pushPreThing(Block, 184, jumplev1),
         pushPreThing(Brick, 192, jumplev1),
         pushPrePipe(224, 0, 16, !1),
@@ -3745,7 +3745,21 @@ function World11(e) {
         pushPreThing(Stone, 1504, 64, 2, 8),
         endCastleOutside(1580, 0, 1)
     }
-    )), new Area("Underworld",(function() {
+                
+    )), new Area("Sky", function() {
+    setLocationGeneration(3);
+    
+    pushPreThing(Stone, 0, 0, 4);
+    pushPreThing(Stone, 40, 0, 72);
+    pushPreThing(Platform, 120, 32, 8, collideTransport);
+    fillPreThing(Coin, 120, 64, 16, 1, 8);
+    fillPreThing(Coin, 256, 80, 3, 1, 8);
+    fillPreThing(Coin, 288, 72, 16, 1, 8);
+    fillPreThing(Coin, 424, 80, 3, 1, 8);
+    
+    setExitLoc(1);
+    // pushPreThing(LocationShifter, 609, -32, 2, [window.innerWidth / unitsize, 16]);
+    }), new Area("Underworld",(function() {
         setLocationGeneration(2),
         makeCeiling(32, 7),
         pushPreFloor(0, 0, 17),
