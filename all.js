@@ -3747,7 +3747,7 @@ function World11(e) {
     }
                 
     )), new Area("Sky", function() {
-    setLocationGeneration(3);
+    setLocationGeneration(2);
     
     pushPreThing(Stone, 0, 0, 4);
     pushPreThing(Stone, 40, 0, 72);
@@ -3760,7 +3760,7 @@ function World11(e) {
     setExitLoc(1);
     // pushPreThing(LocationShifter, 609, -32, 2, [window.innerWidth / unitsize, 16]);
     }), new Area("Underworld",(function() {
-        setLocationGeneration(2),
+        setLocationGeneration(3),
         makeCeiling(32, 7),
         pushPreFloor(0, 0, 17),
         fillPreThing(Brick, 0, 8, 1, 11, 8, 8),
