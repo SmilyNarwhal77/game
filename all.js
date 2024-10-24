@@ -3653,7 +3653,7 @@ function World11(e) {
         pushPreThing(Goomba, 176, 8),
         pushPreThing(Brick, 176, jumplev1),
         pushPreThing(Block, 176, jumplev2),
-        pushPreThing(Brick, 177, jumplev3, [Vine, 3]),
+        pushPreThing(Brick, 177, jumplev2, [Vine, 3]),
         pushPreThing(Block, 184, jumplev1),
         pushPreThing(Brick, 192, jumplev1),
         pushPrePipe(224, 0, 16, !1),
