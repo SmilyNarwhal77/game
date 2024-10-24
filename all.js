@@ -3754,19 +3754,17 @@ function World11(e) {
         fillPreThing(Coin, 41, 63, 5, 1, 8, 8),
         pushPreThing(PipeSide, 104, 16, 1),
         pushPreThing(PipeVertical, 120, 88, 88)
-    }
-    ))
-                
+    }           
     )), new Area("Sky", function() {
     setLocationGeneration(3);
     
     pushPreThing(Stone, 0, 0, 4);
     pushPreThing(Stone, 40, 0, 72);
     pushPreThing(Platform, 120, 32, 8, collideTransport);
-    fillPreThing(Goomba, 120, 64, 16, 1, 8);
-    fillPreThing(Koopa, 256, 80, 3, 1, 8);
-    fillPreThing(Beetle, 288, 72, 16, 1, 8);
-    fillPreThing(Bowser, 424, 80, 3, 1, 8);
+    fillPreThing(Coin, 120, 64, 16, 1, 8);
+    fillPreThing(Coin, 256, 80, 3, 1, 8);
+    fillPreThing(Koopa, 288, 72, 16, 1, 8);
+    fillPreThing(Coin, 424, 80, 3, 1, 8);
     
     setExitLoc(1);
     // pushPreThing(LocationShifter, 609, -32, 2, [window.innerWidth / unitsize, 16]);
