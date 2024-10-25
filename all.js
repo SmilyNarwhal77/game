@@ -3631,14 +3631,15 @@ function World11(e) {
     e.areas = [new Area("Overworld",(function() {
         setLocationGeneration(0);
         var e = "";
-        e += "<div style='width:350px;max-height:189px;background-color:#d64d00;border-radius:7px;box-shadow:3px 3px #efb28b inset, -3px -3px black inset;",
+        e += "<div style='width:300px;max-height:189px;background-color:#d64d00;border-radius:7px;box-shadow:3px 3px #efb28b inset, -3px -3px black inset;",
         e += 'background-image: url("Theme/Greeting.gif"), url("Theme/Greeting.gif"), url("Theme/Greeting.gif"), url("Theme/Greeting.gif");',
         e += "background-repeat: no-repeat;",
         e += "background-position: 7px 7px, 336px 7px, 7px 168px, 336px 168px",
         e += "'>",
         e += "  <p style='text-align:left;padding:7px 0 11px 11px;color:#ffcccc;font-family: \'Ubuntu\', sans-serif;font-size:77px;text-shadow:3px 8px black'>",
         e += "    <span style='font-size:40px'>Mario's</span>",
-        e += "    <span style='font-size:40px;line-height:96px;font-family: \'Ubuntu\', sans-serif;'>Recycling Adventure</span>",
+        e += "    <span style='font-size:40px;line-height:60px;font-family: \'Ubuntu\', sans-serif;'>Recycling</span>",
+        e += "    <span style='font-size:40px;line-height:60px;font-family: \'Ubuntu\', sans-serif;'>Adventure</span>",
         e += "  </p>",
         e += "</div>",
         e += "<div id='boo' style='text-align:right;color:#ffcccc;margin-top:-7px;width:360px;height:25px;'>&copy;2024 Royal's Game Developers</div>",
