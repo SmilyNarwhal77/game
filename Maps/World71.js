@@ -14,6 +14,7 @@ map.areas = [
     pushPreThing(Koopa, 208, 22, false, true);
     pushPreThing(Brick, 216, jumplev2, Mushroom);
     pushPreThing(Cannon, 224, 8, 1);
+    pushPreThing(Cannon, 224, 10, 1);
     pushPreThing(Cannon, 224, 24, 2);
     fillPreThing(Brick, 224, jumplev2, 2, 1, 8);
     pushPreThing(Cannon, 288, 16, 2);
