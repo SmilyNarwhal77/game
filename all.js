@@ -3639,7 +3639,7 @@ function World11(e) {
         e += "  <p style='text-align:left;padding:7px 0 11px 11px;color:#ffcccc;font-family: "Ubuntu", sans-serif;font-size:77px;text-shadow:3px 8px black'>",
         e += "    <span style='font-size:40px'>Mario's</span>",
         e += "    <br><br>",
-        e += "    <span style='font-size:40px;line-height:96px;font-family: "Ubuntu", sans-serif;'>Recycling<br>Adventure</span>",
+        e += "    <span style='font-size:40px;line-height:96px;font-family: "Ubuntu", sans-serif;'>Recycling Adventure</span>",
         e += "  </p>",
         e += "</div>",
         e += "<div id='boo' style='text-align:right;color:#ffcccc;margin-top:-7px;width:360px;height:25px;'>&copy;2024 Royal's Game Developers</div>",
