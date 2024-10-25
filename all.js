@@ -3674,7 +3674,7 @@ function World11(e) {
         pushPreThing(Block, 184, jumplev1),
         pushPreThing(Brick, 192, jumplev1),
         pushPrePipe(224, 0, 16, !1),
-        pushPrePipe(304, 0, 24),
+        pushPrePipe(304, 0, 24, true, 4),
         pushPrePipe(368, 0, 32),
         pushPreThing(Bowser, 340, 8),
         pushPrePipe(368, 0, 32),
@@ -3765,7 +3765,7 @@ function World11(e) {
     }
                 
     )), new Area("Underwater", function() {
-    setLocationGeneration(3);
+    setLocationGeneration(4);
     
     goUnderWater();
     
