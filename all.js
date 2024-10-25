@@ -173,6 +173,12 @@ function aaa() {
     window.player.title = window.goomba ? "Goomba" : "Koopa",
     setThingSprite(window.player)
 }
+function aab() {
+    window.brick = !window.brick,
+    localStorage.brick = window.brick,
+    window.player.title = window.brick ? "Brick" : "Mushroom",
+    setThingSprite(window.player)
+}
 function startDataTime() {
     TimeHandler.addEventInterval(updateDataTime, 25, 1 / 0, data.time)
 }
