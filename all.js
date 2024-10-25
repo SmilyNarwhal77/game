@@ -3631,7 +3631,7 @@ function World11(e) {
     e.areas = [new Area("Overworld",(function() {
         setLocationGeneration(0);
         var e = "";
-        e += "<div style='width:300px;max-height:189px;background-color:#d64d00;border-radius:7px;box-shadow:3px 3px #efb28b inset, -3px -3px black inset;",
+        e += "<div style='width:250px;max-height:189px;background-color:#d64d00;border-radius:7px;box-shadow:3px 3px #efb28b inset, -3px -3px black inset;",
         e += 'background-image: url("Theme/Greeting.gif"), url("Theme/Greeting.gif"), url("Theme/Greeting.gif"), url("Theme/Greeting.gif");',
         e += "background-repeat: no-repeat;",
         e += "background-position: 7px 7px, 336px 7px, 7px 168px, 336px 168px",
