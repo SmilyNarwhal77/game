@@ -3752,7 +3752,7 @@ function World11(e) {
         pushPreThing(Brick, 1368, jumplev1),
         pushPreThing(Bowser, 1392, 8),
         pushPreThing(Bowser, 1404, 8),
-        pushPrePipe(1432, 0, 16),
+        pushPrePipe(1432, 0, 16, true, false, 4),
         pushPreThing(Stone, 1448, 8),
         pushPreThing(Stone, 1456, 16, 1, 2),
         pushPreThing(Stone, 1464, 24, 1, 3),
