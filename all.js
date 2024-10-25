@@ -167,6 +167,12 @@ function toggleBowser() {
     window.player.title = window.bowser ? "Bowser" : "Lakitu",
     setThingSprite(window.player)
 }
+function aaa() {
+    window.goomba = !window.goomba,
+    localStorage.goomba = window.goomba,
+    window.player.title = window.goomba ? "Goomba" : "Koopa",
+    setThingSprite(window.player)
+}
 function startDataTime() {
     TimeHandler.addEventInterval(updateDataTime, 25, 1 / 0, data.time)
 }
