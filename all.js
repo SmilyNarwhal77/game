@@ -3676,7 +3676,7 @@ function World11(e) {
         pushPrePipe(224, 0, 16, !1),
         pushPrePipe(304, 0, 24, true, 4),
         pushPrePipe(368, 0, 32),
-        pushPreThing(Bowser, 340, 8),
+        pushPreThing(Goomba, 340, 8),
         pushPrePipe(368, 0, 32),
         pushPreThing(Bowser, 412, 8),
         pushPreThing(Bowser, 422, 8),
