@@ -155,28 +155,28 @@ function setDataDisplay() {
 function clearDataDisplay() {
     body.removeChild(data_display)
 }
-function toggleLuigi() {
+function toggleLuigiMario() {
     window.luigi = !window.luigi,
     localStorage.luigi = window.luigi,
     window.player.title = window.luigi ? "Luigi" : "Mario",
     setThingSprite(window.player)
 }
-function toggleBowser() {
+function toggleBowserLakitu() {
     window.bowser = !window.bowser,
     localStorage.bowser = window.bowser,
     window.player.title = window.bowser ? "Bowser" : "Lakitu",
     setThingSprite(window.player)
 }
-function aaa() {
+function toggleGoombaKoopa() {
     window.goomba = !window.goomba,
     localStorage.goomba = window.goomba,
     window.player.title = window.goomba ? "Goomba" : "Koopa",
     setThingSprite(window.player)
 }
-function aab() {
-    window.brick = !window.brick,
-    localStorage.brick = window.brick,
-    window.player.title = window.brick ? "Brick" : "Mushroom",
+function toggleToadPeach() {
+    window.Toad = !window.Toad,
+    localStorage.Toad = window.Toad,
+    window.player.title = window.Toad ? "Toad" : "Peach",
     setThingSprite(window.player)
 }
 function startDataTime() {
