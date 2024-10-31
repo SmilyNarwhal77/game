@@ -4,7 +4,7 @@ map.locs = [
   new Location(1)
 ];
 map.areas = [
-  new Area("Overworld", function() {
+  new Area("Overworld", function() { 
     setLocationGeneration(0);
     
     pushPrePattern("backfencemin2", 0, 0, 5);
