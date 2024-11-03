@@ -3395,7 +3395,7 @@ function goUnderWater() {
 function goOntoLand() {
     map && (map.area && (window.player && !map.shifting && setAreaSetting(map.area.setting.replace("Underwater", "") || "Overworld"),
     map.area.underwater = !1),
-    setMapGravity(),
+    setMapGravity(1.2),
     TimeHandler.clearEvent(map.bubbling),
     map.underwater = !1)
 }
