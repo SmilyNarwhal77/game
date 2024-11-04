@@ -2882,8 +2882,8 @@ function resetMaps() {
     window.defaultsetting = {
         setting: "Overworld"
     },
-    window.mapfuncs = new Array(9);
-    for (var t, n = 1; n <= 9; ++n)
+    window.mapfuncs = new Array(10);
+    for (var t, n = 1; n <= 10; ++n)
         for (t = (e = mapfuncs[n] = [0, 0, 0, 0, 0]).length; t >= 0; --t)
             e[t] = window["World" + n + t];
     mapfuncs.Random = {
