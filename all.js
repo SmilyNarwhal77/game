@@ -6840,7 +6840,8 @@ function resetTriggers() {
         pause: [80, "START_FORWARD"],
         mute: [77],
         q: [81],
-        l: [76]
+        l: [76],
+        m: [77]
     }),
     window.gamepad = new Gamepad,
     gamepad.bind(Gamepad.Event.BUTTON_DOWN, ControlsPipe("keydown", !0)),
@@ -6922,10 +6923,10 @@ function Controls(e, t) {
             }
         },
         l: function(e) {
-            toggleLuigi()
+            toggleLuigiMario()
         },
         m: function(e) {
-            toggleBowser()
+            toggleBowserLakitu()
         }
     }, o = this.keyup = {
         left: function(e) {
