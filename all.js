@@ -3656,7 +3656,7 @@ function World11(e) {
         e += "'>",
         e += "  <p style='text-align:left;padding:7px 0 11px 11px;color:#ffcccc;font-family: \'Ubuntu\', sans-serif;font-size:77px;text-shadow:3px 8px black'>",
         e += "    <span style='font-size:40px'>Mario's</span>",
-        e += "    <span style='font-size:40px;line-height:60px;font-family: \'Ubuntu\', sans-serif;'>Recycling</span>",
+        e += "    <span style='font-size:40px;line-height:60px;font-family: \'Ubuntu\', sans-serif;'>Goofy</span>",
         e += "    <span style='font-size:40px;line-height:60px;font-family: \'Ubuntu\', sans-serif;'>Adventure</span>",
         e += "  </p>",
         e += "</div>",
@@ -3770,53 +3770,7 @@ function World11(e) {
         endCastleOutside(1580, 0, 1)
     }
                 
-    )), new Area("Underwater", function() {
-    setLocationGeneration(4);
-    
-    goUnderWater();
-    
-    pushPreFloor(0, 0, 22);
-    pushPreThing(Stone, 88, 56, 5);
-    pushPreThing(Coral, 96, 24, 3);
-    pushPreThing(Coral, 120, 72, 2);
-    pushPreThing(Coin, 136, 24);
-    pushPreThing(Coral, 160, 32, 4);
-    fillPreThing(Coin, 177, 47, 10, 1, 8, 8);
-    
-    pushPrePlatformGenerator(182, 6, 1);
-    pushPreFloor(208, 24, 2);
-    pushPreThing(Stone, 208, 88, 2, 3);
-    pushPreThing(CheepCheep, 220, 60);
-    pushPrePlatformGenerator(230, 6, 1);
-    pushPreFloor(256, 24, 2);
-    pushPreThing(Stone, 256, 88, 2, 3);
-    pushPreFloor(272, 0, 4);
-    pushPreThing(Coin, 272, 24);
-    
-    pushPreThing(Coral, 304, 64, 4);
-    pushPreThing(Stone, 304, 72, 6);
-    pushPreThing(CheepCheep, 312, 20);
-    pushPreFloor(320, 0, 2);
-    fillPreThing(Coin, 321, 7, 2, 1, 8);
-    pushPreThing(Coral, 344, 64, 4);
-    pushPreThing(Coin, 348, 22);
-    pushPreFloor(352, 0, 21);
-    pushPreThing(Coral, 368, 16, 2);
-    
-    pushPreThing(CheepCheep, 388, 40, true);
-    pushPreThing(Stone, 400, 32, 4);
-    fillPreThing(Coin, 401, 39, 4, 1, 8);
-    pushPreThing(CheepCheep, 424, 84);
-    pushPreThing(Stone, 432, 56, 4);
-    fillPreThing(Coin, 433, 63, 4, 1, 8);
-    
-    pushPreThing(Stone, 472, 8);
-    pushPreThing(Stone, 480, 16, 1, 2);
-    pushPreThing(Stone, 488, 32, 2, 4);
-    pushPreThing(Stone, 488, 88, 2, 4);
-    pushPreThing(PipeSide, 496, 48, 1);
-    pushPreThing(Stone, 504, 88, 2, 11);
-  }), new Area("Sky", function() {
+    )),  new Area("Sky", function() {
     setLocationGeneration(3);
     
     pushPreThing(Stone, 0, 0, 4);
@@ -3829,18 +3783,7 @@ function World11(e) {
     
     setExitLoc(1);
     // pushPreThing(LocationShifter, 609, -32, 2, [window.innerWidth / unitsize, 16]);
-    }), new Area("Underworld",(function() {
-        setLocationGeneration(2),
-        makeCeiling(32, 7),
-        pushPreFloor(0, 0, 17),
-        fillPreThing(Brick, 0, 8, 1, 11, 8, 8),
-        fillPreThing(Brick, 32, 8, 7, 3, 8, 8),
-        fillPreThing(Coin, 33, 31, 7, 2, 8, 16),
-        fillPreThing(Coin, 41, 63, 5, 1, 8, 8),
-        pushPreThing(PipeSide, 104, 16, 1),
-        pushPreThing(PipeVertical, 120, 88, 88)
-    }
-    ))]
+    })]
 }
 function randMapType(e) {
     e.locs = [new Location(0,entryRandom)],
