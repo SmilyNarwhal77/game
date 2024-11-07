@@ -6790,7 +6790,9 @@ function resetTriggers() {
         mute: [77],
         q: [81],
         l: [76],
-        m: [77]
+        m: [77],
+        z: [90],
+        x: [88]
     }),
     window.gamepad = new Gamepad,
     gamepad.bind(Gamepad.Event.BUTTON_DOWN, ControlsPipe("keydown", !0)),
