@@ -173,11 +173,17 @@ function toggleGoombaKoopa() {
     window.player.title = window.goomba ? "Goomba" : "Koopa",
     setThingSprite(window.player)
 }
-function toggleToadPeach() {
-    window.Toad = !window.Toad,
-    localStorage.Toad = window.Toad,
-    window.player.title = window.Toad ? "Toad" : "Peach",
+function toggleMushroomStar() {
+    window.Star = !window.Star,
+    localStorage.Star = window.Star,
+    window.player.title = window.Star ? "Star" : "Mushroom",
     setThingSprite(window.player)
+}
+function gravityplus() {
+    gravity += 0.01
+}
+function gravityminus() {
+    gravity -=0.01
 }
 function startDataTime() {
     TimeHandler.addEventInterval(updateDataTime, 25, 1 / 0, data.time)
@@ -6927,6 +6933,12 @@ function Controls(e, t) {
         },
         m: function(e) {
             toggleBowserLakitu()
+        },
+        z: function(e) {
+            gravityplus()
+        },
+        x: function(e) {
+            gravityminus()
         }
     }, o = this.keyup = {
         left: function(e) {
@@ -8581,7 +8593,7 @@ function QuadsKeepr(e) {
         t.things[t.numthings] = e,
         ++t.numthings
     }
-    function A(e, t) {
+    function A(e, t)         {
         return e[g] + d >= t.left && e[h] - d <= t.right && e[v] + d >= t.top && e[f] - d <= t.bottom
     }
     !function(e) {
