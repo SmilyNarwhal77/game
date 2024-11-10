@@ -120,10 +120,10 @@ function Data() {
     this.traveled = this.traveledold = 0,
     this.scorelevs = [10000000, 200, 400, 500, 800, 1e3, 2e3, 4e3, 5e3, 8e3],
     this.score = new DataObject(0,6,"SCORE"),
-    this.time = new DataObject(350,3,"TIME"),
+    this.time = new DataObject(240,3,"TIME"),
     this.world = new DataObject(0,0,"WORLD"),
     this.coins = new DataObject(0,0,"COINS"),
-    this.lives = new DataObject(100,1,"LIVES"),
+    this.lives = new DataObject(10,1,"LIVES"),
     this.time.dir = -1,
     this.scoreold = 0
 }
