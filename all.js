@@ -1156,7 +1156,7 @@ function setEditorLocalRetrieval() {
     }
 }
 function resetSeed() {
-    window.seeder = 1777771 / (window.seed = round(1e2 * random())),
+    window.seeder = 1777771 / (window.seed = round(1e7 * random())),
     window.seedlast = .007,
     window.getSeed = function() {
         return seedlast = "0." + String(seeder / seedlast).substring(4).replace(".", "")
