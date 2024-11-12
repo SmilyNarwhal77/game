@@ -123,7 +123,7 @@ function Data() {
     this.time = new DataObject(240,3,"TIME"),
     this.world = new DataObject(0,0,"WORLD"),
     this.coins = new DataObject(0,0,"COINS"),
-    this.lives = new DataObject(10,1,"LIVES"),
+    this.lives = new DataObject(1,1,"LIVES"),
     this.time.dir = -1,
     this.scoreold = 0
 }
@@ -2164,7 +2164,7 @@ function resetLibrary() {
                 },
                 Firework: ["same", ["solids", "Firework"]],
                 Goomba: {
-                    normal: "p[0,2,5,9]x06,3333x011,x36,x09,x38,x07,x310,x05,311x36,11200213301333312333003332x16,23330333321233212x38,22233222x320,03333x26,3333x05,x28,x06,11x28,x05,x15,x25,110000x16,222111x05,x15,001110000",
+                    normal: "p[0,2,5,9]x06,3333x011,x36,x09,x38,x07,x310,x05,311x36,11200213301213112333003332x16,23330333321233212x38,22233222x320,03333x26,3333x05,x28,x06,11x28,x05,x15,x25,110000x16,222111x05,x15,001110000",
                     Underworld: "p[0,15,16,18]x06,2222x011,x26,x09,x28,x07,x210,x05,211x26,222222232231132213222002223x16,32220222231322313x28,33322333x220,02222x36,2222x05,x38,x06,11x38,x05,x15,x35,110000x16,333111x05,x15,001110000",
                     Castle: ["filter", ["characters", "Goomba", "Overworld"], filters.Castle]
                 },
@@ -3676,17 +3676,17 @@ function World11(e) {
         pushPreThing(Block, 168, jumplev1, Mushroom),
         pushPreThing(Goomba, 178, 10),
         pushPreThing(Brick, 176, jumplev1),
-        pushPreThing(Block, 176, jumplev2, [Vine, 3]),
+        pushPreThing(Block, 176, jumplev2, Goomba),
         pushPreThing(Block, 184, jumplev1),
         pushPreThing(Brick, 192, jumplev1),
         pushPrePipe(224, 0, 16, !1),
-        pushPrePipe(304, 0, 24, true, 4),
+        pushPrePipe(304, 0, 24, false),
         pushPrePipe(368, 0, 32),
         pushPreThing(Goomba, 340, 8),
         pushPrePipe(368, 0, 32),
         pushPreThing(Goomba, 412, 8),
         pushPreThing(Goomba, 422, 8),
-        pushPrePipe(456, 0, 32, !1, 2),
+        pushPrePipe(456, 0, 32, !1),
         pushPreThing(Block, 512, 40, [Mushroom, 1], !0),
         pushPreFloor(568, 0, 15),
         pushPreThing(Brick, 618, jumplev1),
@@ -3774,7 +3774,7 @@ function World11(e) {
     }
                 
     )),  new Area("Sky", function() {
-    setLocationGeneration(3);
+    setLocationGeneration(2);
     
     pushPreThing(Stone, 0, 0, 4);
     pushPreThing(Stone, 40, 0, 72);
