@@ -119,11 +119,9 @@ map.areas = [
     makeCeiling(1274, 7);
     fillPreThing(Brick, 1346, 32, 7, 7, 8, 8);
     pushPreThing(ScrollEnabler, 1340, ceilmax);
-    makeCeiling(1346,34);
-    pushPreWarpWorld(1400, 0, [[4,1],[3,1],[2,1]], 0, true);
+    makeCeiling(1346, 17);
+    pushPreWarpWorld(1400, 0, [[8,1],[4,2],[1,1]], 0, true);
     fillPreThing(Brick, 1506, 8, 2, 11, 8, 8);
-    pushPreWarpWorld(1600, 0, [8,1],[1,1],[5,3]], 0, true);
-    fillPreThing(Brick, 1706, 8, 2, 11, 8, 8);
   }),
   new Area("Underworld", function() {
     setLocationGeneration(2);
