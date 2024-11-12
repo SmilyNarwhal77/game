@@ -3660,7 +3660,7 @@ function World11(e) {
         e += "    <span style='font-size:40px;line-height:60px;font-family: \'Ubuntu\', sans-serif;'>Adventure</span>",
         e += "  </p>",
         e += "</div>",
-        e += "<div id='boo' style='text-align:right;color:#ffcccc;margin-top:-7px;width:360px;height:25px;'>&copy;2024 Royal's Game Developers</div>",
+        e += "<div id='boo' style='text-align:right;color:#ffcccc;margin-top:-7px;width:360px;height:25px;'>Adapted from the original game, Super Mario Bros.(1985) by Nintendo</div>",
         is_mobile || (e += "<p id='explanation' style='text-align:center;\x3c!--/*text-shadow:2px 2px 1px black;*/--\x3emargin-left:7px;'>",
         e += "  Move: Arrows/WASD",
         e += "  <br>",
