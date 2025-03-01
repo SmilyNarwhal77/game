@@ -121,7 +121,7 @@ function Data() {
     this.scorelevs = [100, 200, 400, 500, 800, 1e3, 2e3, 4e3, 5e3, 8e3],
     this.score = new DataObject(0,6,"SCORE"),
     this.time = new DataObject(240,3,"TIME"),
-    this.world = new DataObject(0,0,"WORLD"),
+    this.world = new DataObject(2,1,"WORLD"),
     this.coins = new DataObject(0,0,"COINS"),
     this.lives = new DataObject(5,1,"LIVES"),
     this.time.dir = -1,
