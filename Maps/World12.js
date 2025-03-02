@@ -23,7 +23,7 @@ map.areas = [
     pushPreThing(Stone, 176, 24, 1, 3);
     pushPreThing(Stone, 184, 32, 1, 4);
     pushPreThing(Stone, 192, 40, 1, 5);
-    pushPreThing(Goomba, 192, 48);
+    pushPreThing(Mushroom, 192, 48);
     pushPreThing(Block, 224, jumplev1, false, true);
     pushPreThing(Block, 224, jumplev2, [Mushroom, 1], true);
     fillPreThing(Brick, 232, jumplev2, 3, 1, 8, 8);
