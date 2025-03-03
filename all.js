@@ -3466,7 +3466,7 @@ function endCastleInsideFinal(e, t) {
         innerHTML: "<span class='span'>THANK YOU " + window.player.title.toUpperCase() + "!</span>",
         style: x
     }, e + 160, 66).object, pushPreText({
-        innerHTML: "<span class='span'>BUT OUR PRINCESS IS IN<BR>ANOTHER CASTLE!</span>",
+        innerHTML: "<span class='span'>BUT OUR RIZZLER IS IN<BR>ANOTHER CASTLE!</span>",
         style: x
     }, e + 148, 50).object])
 }
