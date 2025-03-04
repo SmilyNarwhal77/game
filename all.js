@@ -6889,7 +6889,7 @@ function Controls(e, t) {
             gravityminus()
         },
         b: function(e) {
-            speed += 1;
+            player.walkspeed += 1;
         }
     }, o = this.keyup = {
         left: function(e) {
