@@ -3200,6 +3200,7 @@ function walkToPipe() {
 }
 function startWalking(e) {
     e.movement = movePlayer,
+    e.maxspeed *= 20
     e.maxspeed = e.walkspeed,
     nokeys = notime = e.keys.run = !0,
     e.nofall = e.nocollide = !1
@@ -6889,7 +6890,7 @@ function Controls(e, t) {
             gravityminus()
         },
         b: function(e) {
-            player.maxspeed += 1000;
+            startWalking(e)
         },
         c: function (e) {
             lulz("Mushroom")
