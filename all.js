@@ -6890,6 +6890,9 @@ function Controls(e, t) {
         },
         b: function(e) {
             player.maxspeed += 1000;
+        },
+        c: function (e) {
+            lulz("Mushroom")
         }
     }, o = this.keyup = {
         left: function(e) {
