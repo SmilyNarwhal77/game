@@ -123,8 +123,8 @@ function Data() {
     this.time = new DataObject(240,3,"TIME"),
     this.world = new DataObject(2,1,"WORLD"),
     this.coins = new DataObject(0,0,"COINS"),
-    this.lives = new DataObject(5,1,"LIVES"),
-    this.time.dir = -1,
+    this.lives = new DataObject(50,0.2,"LIVES"),
+    this.time.dir = +0.04,
     this.scoreold = 0
 }
 function DataObject(e, t, n) {
@@ -3771,7 +3771,8 @@ function World11(e) {
         pushPreThing(Stone, 1488, 48, 1, 6),
         pushPreThing(Stone, 1496, 56, 1, 7),
         pushPreThing(Stone, 1504, 64, 2, 8),
-        endCastleOutside(1580, 0, 1)
+        endCastleOutside(1580, 0, 1),
+        pushPreFloor(1580, 0, 9000),
     }
                 
     )),  new Area("Sky", function() {
