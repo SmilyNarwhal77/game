@@ -3772,7 +3772,6 @@ function World11(e) {
         pushPreThing(Stone, 1496, 56, 1, 7),
         pushPreThing(Stone, 1504, 64, 2, 8),
         endCastleOutside(1580, 0, 1),
-        pushPreFloor(1580, 0, 9000),
     }
                 
     )),  new Area("Sky", function() {
