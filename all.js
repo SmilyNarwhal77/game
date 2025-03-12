@@ -3,7 +3,7 @@ function triggerKeyboardEvent(e, t, n) {
     x.initEvent && x.initEvent(n, !0, !0),
     x.keyCode = t,
     x.which = t,
-    e.dispatchEvent ? e.dispatchEvent(x) : e.fireEvent("onkeydown", x)
+    e.dispatchEvent ? e.dispatchEvent(x) : e.fireEvent("onkeydown", x),
 }
 function applyNewJs() {
     document.body.addEventListener("keydown", (function(e) {
