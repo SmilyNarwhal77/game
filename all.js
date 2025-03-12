@@ -6896,7 +6896,7 @@ function Controls(e, t) {
             lulz("Mushroom")
         },
         e: function(e) {
-            FullScreenMario()
+            FullScreenMario() 
         },
     }, o = this.keyup = {
         left: function(e) {
