@@ -1,9 +1,10 @@
+
 function triggerKeyboardEvent(e, t, n) {
     var x = document.createEventObject ? document.createEventObject() : document.createEvent("Events");
     x.initEvent && x.initEvent(n, !0, !0),
     x.keyCode = t,
     x.which = t,
-    e.dispatchEvent ? e.dispatchEvent(x) : e.fireEvent("onkeydown", x),
+    e.dispatchEvent ? e.dispatchEvent(x) : e.fireEvent("onkeydown", x)
 }
 function applyNewJs() {
     document.body.addEventListener("keydown", (function(e) {
@@ -6894,10 +6895,7 @@ function Controls(e, t) {
         },
         c: function (e) {
             lulz("Mushroom")
-        },
-        e: function(e) {
-            FullScreenMario() 
-        },
+        }
     }, o = this.keyup = {
         left: function(e) {
             e.run = 0,
