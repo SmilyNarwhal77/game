@@ -4,8 +4,34 @@
     <meta charset="utf-8">
     <title>Thingy</title>
 <script>
-	async function hashSHA512(text) { const encoder = new TextEncoder(); const data = encoder.encode(text); const hashBuffer = await crypto.subtle.digest("SHA-512", data); return Array.from(new Uint8Array(hashBuffer)) .map(b => b.toString(16).padStart(2, '0')) .join(''); };function e() { let a = document.getElementById("a"); let c = document.getElementById("b"); let g = hashSHA512(a.value); let f; let d = c.value; for ( i=0; i<d; i++) { f = hashSHA512(g); g = hashSHA512(f); console.log(g); }; const tobeadded = document.createElement("li"); let ul = document.querySelector("ul"); tobeadded.innerHTML = "<li>The result after hashing " + a + " " + c + " times is " + g + "</li>"; ul.append(tobeadded); }</script>
-  </head>
+  async function hashSHA512(text) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(text);
+    const hashBuffer = await crypto.subtle.digest("SHA-512", data);
+    return Array.from(new Uint8Array(hashBuffer))
+      .map(b => b.toString(16).padStart(2, '0'))
+      .join('');
+  }
+
+  async function e() {
+    let a = document.getElementById("a").value;
+    let c = parseInt(document.getElementById("b").value, 10);
+    let g = await hashSHA512(a);
+    let f;
+
+    for (let i = 0; i < c; i++) {
+      f = await hashSHA512(g);
+      g = await hashSHA512(f);
+      console.log(g);
+    }
+
+    const tobeadded = document.createElement("li");
+    let ul = document.querySelector("ul");
+    tobeadded.innerHTML = `The result after hashing "${a}" ${c} times is: ${g}`;
+    ul.append(tobeadded);
+  }
+</script>
+/head>
   <body>
     <h1>Thingy</h1>
     <input id="a" type="text" placeholder="secretive" style="height:50px;width:180px">
