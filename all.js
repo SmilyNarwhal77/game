@@ -428,7 +428,7 @@ function setEditorLibrary() {
             },
             CastleBlock: {
                 arguments: {
-                    fireballs: 5,
+                    fireballs: 2,
                     direction: ["CW", "CCW"],
                     hidden: Boolean
                 },
