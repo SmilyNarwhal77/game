@@ -20,9 +20,8 @@ map.areas = [
     setLocationGeneration(1);
   
     fillPreThing(Brick, 0, 8, 1, 11, 8, 8);
-    pushPreFloor(0, 0, 80);
-    makeCeiling(48, 83);
-    pushPreThing(Block, 80, jumplev1, Mushroom);
+    pushPreFloor(0, 0, 8000);
+    /*pushPreThing(Block, 80, jumplev1, Mushroom);
     fillPreThing(Block, 88, jumplev1, 4, 1, 8, 8);
     
     pushPreThing(Goomba, 128, 8);
@@ -108,9 +107,9 @@ map.areas = [
     pushPreFloor(1144, 0, 8);
     fillPreThing(Brick, 1144, 40, 5, 1, 8, 8);
     pushPreThing(Koopa, 1152, 12, true);
-    pushPreThing(Brick, 1184, 40, Mushroom);
+    pushPreThing(Brick, 1184, 40, Mushroom);*/
     pushPrePlatformGenerator(1224, 6, -1);
-    // pushPreThing(PlatformGenerator, 1224, ceilmax, 6, -1);
+    pushPreThing(PlatformGenerator, 1224, ceilmax, 6, -1);
     
     pushPreFloor(1266, 0, 32);
     fillPreThing(Brick, 1266, 8, 17, 3, 8, 8);
