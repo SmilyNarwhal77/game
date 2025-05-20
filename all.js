@@ -124,7 +124,7 @@ function Data() {
     this.time = new DataObject(240,3,"TIME"),
     this.world = new DataObject(2,1,"WORLD"),
     this.coins = new DataObject(0,0,"COINS"),
-    this.lives = new DataObject(5,1,"LIVES"),
+    this.lives = new DataObject(5,0.5,"LIVES"),
     this.time.dir = -1,
     this.scoreold = 0
 }
@@ -329,14 +329,14 @@ function setEditorLibrary() {
                 }
             },
             Bowser: {
-                width: 16,
-                height: 16
+                width: 3,
+                height: 3
             }
         },
         solids: {
             Floor: {
                 arguments: {
-                    width: 16
+                    width: 15
                 },
                 mydefaults: {
                     width: 16
@@ -3673,11 +3673,11 @@ function World11(e) {
         pushPreText(e, 2, 91),
         pushPrePattern("backreg", 0, 0, 5),
         pushPreFloor(0, 0, 69),
-        pushPreThing(Block, 128, jumplev1),
+        pushPreThing(Block, 128, jumplev1, Mushroom),
         pushPreThing(Brick, 160, jumplev1, Mushroom),
         pushPreThing(Block, 168, jumplev1, Mushroom),
-        pushPreThing(Goomba, 178, 10),
-        pushPreThing(Brick, 176, jumplev1),
+        pushPreThing(Goomba, 178, 10, Mushroom),
+        pushPreThing(Brick, 176, jumplev1, Mushroom),
         pushPreThing(Block, 176, jumplev2, Goomba),
         pushPreThing(Block, 184, jumplev1),
         pushPreThing(Brick, 192, jumplev1),
