@@ -4532,7 +4532,7 @@ function FireFlower(e) {
 }
 function FireBall(e, t) {
     e.group = "item",
-    e.width = e.height = 4,
+    e.width = e.height = 40,
     e.speed = 1.75 * unitsize,
     e.gravity = 1.56 * gravity,
     e.jumpheight = 1.56 * unitsize,
