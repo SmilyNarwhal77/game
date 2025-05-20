@@ -428,7 +428,7 @@ function setEditorLibrary() {
             },
             CastleBlock: {
                 arguments: {
-                    fireballs: 2,
+                    fireballs: 5,
                     direction: ["CW", "CCW"],
                     hidden: Boolean
                 },
@@ -5626,7 +5626,7 @@ function playerHopsOff(e, t, n) {
     ), 21, e)
 }
 function playerFires() {
-    if (!(player.numballs >= 2)) {
+    if (!(player.numballs >= 20)) {
         ++player.numballs,
         addClass(player, "firing");
         var e = new Thing(FireBall,player.moveleft,!0);
