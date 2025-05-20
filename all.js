@@ -4846,7 +4846,7 @@ function collideEnemy(e, t) {
             addClass(e, "hopping"),
             removeClasses(e, "running skidding jumping one two three"),
             e.hopping = !0,
-            1 == player.power && setPlayerSizeSmall(e)
+            10 == player.power && setPlayerSizeSmall(e)
         } else
             e.player ? playerAboveEnemy(e, t) || e.death(e) : t.moveleft = !(e.moveleft = objectToLeft(e, t))
     }
